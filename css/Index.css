@@ -1,0 +1,73 @@
+/*
+------------------------------------------------------------------------------------------------------------
+ESTILOS GENERALES
+------------------------------------------------------------------------------------------------------------
+*/
+html
+{
+	width:100%;
+}
+
+
+/*
+------------------------------------------------------------------------------------------------------------
+MENU DE NAVEGACION
+------------------------------------------------------------------------------------------------------------
+*/
+
+/*
+@media screen and (min-width: 300px) 
+{
+
+	nav 
+	{
+		width:80%;
+		height:100%;
+		margin:0;
+		position: absolute;
+		display:none;
+	}
+	 
+	nav ul li 
+	{
+		display:inline-block;
+		float:none;
+		border:1px solid rgba(100,100,100, .3);
+	}
+
+	nav ul li a 
+	{
+		padding:20px;
+		display:block;
+		text-decoration:none;
+	}
+}
+
+*/
+	nav 
+	{
+		width:80%;
+		margin:0;
+		position: none;
+	}
+
+	nav ul li 
+	{
+		display:inline-block;
+		float:none;
+		border:1px solid rgba(100,100,100, .3);
+	}
+
+	nav ul li a 
+	{
+		padding:20px;
+		display:block;
+		text-decoration:none;
+	}
+
+	section article
+	{
+		position:relative ;
+		display:block;
+		
+	}
