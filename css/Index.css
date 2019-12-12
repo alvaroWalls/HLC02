@@ -6,8 +6,23 @@ ESTILOS GENERALES
 html
 {
 	width:100%;
+	background-image: url("../imagenes/fondo.jpg");
+    background-size: 180%;
+    background-repeat: repeat;
 }
 
+#Cabecera h1
+{
+	text-align: center;
+}
+
+
+.autor
+{ 
+	 font-size: 15px;
+	 padding: 8px;
+	 text-align: center;
+}
 
 /*
 ------------------------------------------------------------------------------------------------------------
@@ -44,30 +59,60 @@ MENU DE NAVEGACION
 }
 
 */
-	nav 
-	{
-		width:80%;
-		margin:0;
-		position: none;
-	}
+#Menu 
+{
+	width:80%;
+	margin:0;
+	position: none; 
+	background-color: none;
+	padding: 50;
 
-	nav ul li 
-	{
-		display:inline-block;
-		float:none;
-		border:1px solid rgba(100,100,100, .3);
-	}
+}
 
-	nav ul li a 
-	{
-		padding:20px;
-		display:block;
-		text-decoration:none;
-	}
+#Menu ul li 
+{
+	display:inline-block;
+}
 
-	section article
-	{
-		position:relative ;
-		display:block;
-		
-	}
+#Menu ul li a 
+{
+	padding: 10px 50px;
+	display:block;
+	text-decoration:none;
+	color: white;
+    transition: all 0.3s linear;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Cuando el usuario pasa el curso por los botones*/
+#Menu ul li a:hover{
+    background-color: #2874B8;
+}
+
+body
+{
+	width: 75%;
+    border: 2.5px solid black;
+	padding: 15px;
+    background-color: rgb(81, 136, 184);
+    margin-right: 150px;
+    margin-left: 150px;
+    font-family: 'Alatsi', sans-serif;
+}
+
+article
+{
+	margin: 70px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #319F9E;
+
+}
+
+section article
+{
+	position:relative;
+	display:block;
+}
