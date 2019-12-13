@@ -6,9 +6,12 @@ ESTILOS GENERALES
 html
 {
 	width:100%;
+	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	/*
 	background-image: url("../imagenes/fondo.jpg");
-    background-size: 180%;
+    background-size: 100%;
     background-repeat: repeat;
+    */
 }
 
 #Cabecera h1
@@ -19,7 +22,7 @@ html
 
 .autor
 { 
-	 font-size: 15px;
+	 font-size: 18px;
 	 padding: 8px;
 	 text-align: center;
 }
@@ -72,6 +75,7 @@ MENU DE NAVEGACION
 #Menu ul li 
 {
 	display:inline-block;
+	margin:60px;
 }
 
 #Menu ul li a 
@@ -79,35 +83,39 @@ MENU DE NAVEGACION
 	padding: 10px 50px;
 	display:block;
 	text-decoration:none;
-	color: white;
+	color: black;
     transition: all 0.3s linear;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
+
 /*Cuando el usuario pasa el curso por los botones*/
 #Menu ul li a:hover{
-    background-color: #2874B8;
+    background-color: #F6B773
 }
 
 body
 {
-	width: 75%;
+	width: 85%;
     border: 2.5px solid black;
-	padding: 15px;
-    background-color: rgb(81, 136, 184);
-    margin-right: 150px;
-    margin-left: 150px;
+	padding: 80px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-right: 8		0px;
+    margin-left: 80px;
     font-family: 'Alatsi', sans-serif;
+    font-size: 18px;
+
 }
 
 article
 {
 	margin: 70px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
+    border: none;
     padding: 10px;
     border-radius: 25px;
-    background-color: #319F9E;
+    background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6);
 
 }
 
