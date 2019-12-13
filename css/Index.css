@@ -61,7 +61,7 @@ MENU DE NAVEGACION
 	}
 }
 
-*/
+
 #Menu 
 {
 	width:80%;
@@ -90,9 +90,54 @@ MENU DE NAVEGACION
 }
 
 
-/*Cuando el usuario pasa el curso por los botones*/
 #Menu ul li a:hover{
     background-color: #F6B773
+}
+*/
+
+
+#Menu
+{
+	margin: auto;
+	width: 500px;
+}
+
+
+#Menu ul
+{
+	list-style: none;
+}
+
+#Menu #Principal li a
+{	
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	display:block; /*Esto se hace para que no se solapen el padding unos con otros*/
+}
+
+#Menu ul li a:hover
+{
+	background-color: #F6B773
+}
+
+#Menu #Principal > li /*Esto se hace para los li que estan directos de #Principal que se coloquen a la izquierda*/
+{	
+	float:left;
+	clear:rigth;
+}
+
+#Menu li #Secundario
+{
+	padding:0px;
+	margin:0px;
+	display:none;
+	position: absolute;
+}
+
+#Menu li:hover >#Secundario
+{
+	display:block;
 }
 
 body
@@ -111,12 +156,16 @@ body
 article
 {
 	margin: 70px;
-    /*border: 2px solid white;*/
     border: none;
     padding: 10px;
     border-radius: 25px;
     background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6);
 
+}
+
+section
+{
+	padding-top: 130px;
 }
 
 section article

@@ -9,6 +9,7 @@
 		<title>CURSO HTML/CSS/JS</title>
 		<link rel="shortcut icon" href="imagenes/icono.png" type="imagen/png"/>
 		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/cursos.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 		
 	</head>
@@ -27,11 +28,19 @@
 		<!--ejempl:<time datetime="2010-09-23" pubdate>algo publicado en 23/09/2010 </time>-->
 		<!--</figure>imagenes, videos, audios etc...; <figcaption> pie de una foto-->
 	   
+	   
+	   
 		<nav id ="Menu">
 		
-			<ul>
+			<ul id = "Principal">
 				<li><a href="index.html">INICIO</a></li>
-				<li><a href="historia.html">HISTORIA</a></li>
+				<li><a href="historia.html">HISTORIA</a>
+				    <ul id = "Secundario">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JAVASCRIPT</a></li>
+					</ul>
+				</li>
 				<li><a href="cursos.html">CURSOS</a></li>
 				<li><a href="formulario.html">FORMULARIO</a></li>
 			</ul>
@@ -39,28 +48,37 @@
 		</nav>
 
 		<aside>
-			<!---->
-			<!---->
-			<!--ASIDE-->
-			<!---->
-			<!---->
+			<ul>
+				<li id="curso1">Curso HTML5</li>
+				<li id="curso2">Curso CSS3</li>
+				<li id="curso3">Curso JavaScript</li>
+			</ul>
 		</aside>
 
 		<section>
-
-			<article>
-
-			</article>
-
+			<div>
+			
+			</div>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			<center><iframe id="contenido" src="" >iFrames not supported</iframe></center>
 
 			<figure>
 				<img src="" alt=""/>
 				<figcaption></figcaption>
 			</figure>
 
-			
-
 		</section>
+		
+		<script>
+			$(document).ready(function(e) {
+				$('#curso1').on('click',function(){
+					$('#contenido').attr('src','primerCurso.html');
+				
+				});
+			
+			
+			});
+		</script>
 
 		<footer>
 			
