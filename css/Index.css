@@ -6,6 +6,8 @@ ESTILOS GENERALES
 html
 {
 	width:100%;
+	background: -webkit-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	background: -moz-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 	/*
 	background-image: url("../imagenes/fondo.jpg");
@@ -17,6 +19,8 @@ html
 #Cabecera h1
 {
 	text-align: center;
+	color: white;
+	text-shadow: 5px -1px 3px rgba(9, 150, 150, 0.72);
 }
 
 
@@ -114,6 +118,9 @@ MENU DE NAVEGACION
 	color: black;
 	padding: 10px 20px;
 	display:block; /*Esto se hace para que no se solapen el padding unos con otros*/
+	transition: all 0.3s linear;
+
+
 }
 
 #Menu ul li a:hover
@@ -124,7 +131,7 @@ MENU DE NAVEGACION
 #Menu #Principal > li /*Esto se hace para los li que estan directos de #Principal que se coloquen a la izquierda*/
 {	
 	float:left;
-	clear:rigth;
+	clear:right;
 }
 
 #Menu li #Secundario
@@ -143,7 +150,7 @@ MENU DE NAVEGACION
 body
 {
 	width: 85%;
-    border: 2.5px solid black;
+    border: 1.5px solid black;
 	padding: 80px;
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     margin-right: 8		0px;
@@ -160,6 +167,9 @@ article
     padding: 10px;
     border-radius: 25px;
     background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #3f87a6);
+	-webkit-box-shadow: 46px -37px 22px -5px rgba(0,0,0,0.33);
+	-moz-box-shadow: 46px -37px 22px -5px rgba(0,0,0,0.33);
+	box-shadow: 46px -37px 22px -5px rgba(0,0,0,0.33);
 
 }
 
@@ -172,4 +182,29 @@ section article
 {
 	position:relative;
 	display:block;
+}
+
+article details p a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#figura
+{
+  opacity: 0.6;
+  padding-top: 10px;
+  float:right;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  80% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  80% {transform: rotate(180deg);}
 }
