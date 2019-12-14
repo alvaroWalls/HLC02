@@ -17,11 +17,42 @@ html
     */
 }
 
+body
+{
+	width: 85%;
+    border: 1.5px solid black;
+	padding: 80px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-right: 30px;
+    margin-left: 20px;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 18px;
+
+}
+
 #Cabecera h1
 {
 	text-align: center;
 	color: white;
 	text-shadow: 5px -1px 3px rgba(9, 150, 150, 0.72);
+}
+
+figure img 
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+figure #imgespecial 
+{
+	margin-right: auto;
+	margin-left: -40px;
+}
+
+figure figcaption
+{
+	text-align: center;
 }
 
 
@@ -30,6 +61,11 @@ html
 	 font-size: 18px;
 	 padding: 8px;
 	 text-align: center;
+}
+
+.lista
+{
+	list-style-type: square;
 }
 
 /*
@@ -148,18 +184,11 @@ MENU DE NAVEGACION
 	display:block;
 }
 
-body
-{
-	width: 85%;
-    border: 1.5px solid black;
-	padding: 80px;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-    margin-right: 30px;
-    margin-left: 20px;
-    font-family: 'Alatsi', sans-serif;
-    font-size: 18px;
-
-}
+/*
+------------------------------------------------------------------------------------------------------------
+ARTICLE Y SECTION
+------------------------------------------------------------------------------------------------------------
+*/
 
 article
 {
