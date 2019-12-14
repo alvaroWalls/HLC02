@@ -1,0 +1,22 @@
+form
+{
+	padding-top: 200px;
+}
+
+form #bloqueDatosPersonales
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+form #bloqueDatosAdicionales
+{
+	padding-top: 10px;
+}
+
+#boton
+{
+	font-family: 'Alatsi', sans-serif;
+}
+

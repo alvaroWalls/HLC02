@@ -9,8 +9,9 @@
 		<title>CURSO HTML/CSS/JS</title>
 		<link rel="shortcut icon" href="imagenes/icono.png" type="imagen/png"/>
 		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/formulario.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-		
+		<script language="javascript" src="js/validar.js"></script>
 	</head>
 	<body>
 		<header id = "Cabecera">
@@ -44,30 +45,92 @@
 		
 		</nav>
 
-		<aside>
-			<!---->
-			<!---->
-			<!--ASIDE-->
-			<!---->
-			<!---->
-		</aside>
+		<form action = "index.html" method="post" class="form-register" onSubmit="return validar();">
+        <fieldset id="bloqueDatosPersonales">
+            <legend id="hola">DATOS PERSONALES</legend>
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Apellidos:</td>
+                    <td>DNI</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nombre" /></td>
+                    <td><input type="text" id="apellido" /></td>
+                    <td><input type="text" id="dni" /></td>
+                </tr>
+                <tr>
+                    <td>Localidad de Nacimiento</td>
+                    <td>Provincia:</td>
+                    <td>Fecha de Nacimiento</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="localidad" /></td>
+                    <td>
+                        <select name="provincia">
+                            <option>Huelva</option>
+                            <option>Sevilla</option>
+                            <option>Cádiz</option>
+                            <option>Córdoba</option>
+                            <option>Jaén</option>
+                            <option>Granada</option>
+                            <option>Málaga</option>
+                            <option>Almería</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" id="fecha" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dirección de email</td>
+                    <td>Código Postal:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="email" size="40" id="direccion" />
+                    </td>
+                    <td>
+                        <input type="text" id="codpostal" />
+                    </td>	
+                </tr>
+                <tr>
+                	<td>¿Recomendarias esta pagina?</td>
+                </tr>
+                <tr>
+      		 		<td>
+      		 		<ul>
+		                <li type ="square"><input type="checkbox" name="SI" id = "SI" value="Si"/>SI</li>
+		                <li type ="square"><input type="checkbox" name="NO" id = "NO" value="No"/>NO</li>
+           			</ul>
+           			</td>
 
-		<section>
-
-			<article>
-
-			</article>
-
-
-			<figure>
-				<img src="" alt=""/>
-				<figcaption></figcaption>
-			</figure>
-
-			
-
-		</section>
-
+           		</tr>
+           		<tr>
+           			<input type="hidden" name="ubicacion" value="pagina-del-campo-hidden">
+           		</tr>
+            </table>
+        </fieldset>
+        <fieldset id="bloqueDatosAdicionales">
+            <legend>TU OPINION NO NOS IMPORTA</legend>
+			<br/>
+            <p>Que curso te ha resultado mas interesante:</p>
+            <ul>
+                <li><input type="radio" name="c_interesante" id ="radio_1" value="HTML"/>HTML</li>
+                <li><input type="radio" name="c_interesante" id ="radio_2" value="CSS"/>CSS</li>
+                <li><input type="radio" name="c_interesante" id ="radio_3" value="JAVASCRIPT"/>JAVASCRIPT</li>
+            </ul>
+            <tr>
+                <td>Teléfono de contacto</td>
+            </tr>
+            <tr>
+            	<input type="text" name= "telefono" id="telefono"/>
+            </tr>
+        </fieldset>
+        <p>
+            <input id ="boton" class="button" type="submit" value="Enviar Solicitud"/>
+        </p>
+    </form>
 		<footer>
 			
 		</footer>
