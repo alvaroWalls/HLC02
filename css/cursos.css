@@ -1,18 +1,28 @@
-section iframe
+section article
 {
-	height:600px;
-	width: 800px;
-	border:0;
+	margin-left: 30%;
+	margin-bottom: -20px;
+
 }
 
 aside
 {
-	padding-top:100px;
+	position: fixed;
+	margin-left: 5%;
+	margin-top: 10%;
+	float:left;
+	clear:left;
+	border-radius: 25px;
+	padding: 10px;
+	background-color: #E8AD47;
 }
 
 aside ul li 
 {
 	list-style-type: none;
+	margin-left: -20%;
+	margin-bottom: 20%;
+
 }
 
 aside ul li a
@@ -20,3 +30,4 @@ aside ul li a
 	
 	text-decoration:none;
 }
+
