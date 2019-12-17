@@ -48,6 +48,29 @@
 		
 		</nav>
 
+		<!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="developer.html">DEVELOPER</a>
+			<li><a href="developer.html">-INTRODUCCION</a></li>
+			<li><a href="firefox.html">-FIREFOX</a></li>
+			<li><a href="chrome.html">-CHROME</a></li>
+			<li><a href="cursos.html">CURSOS</a></li>
+			<li><a href="formulario.html">FORMULARIO</a></li>
+		</nav>
+		<span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
+		
+		<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>	
+
 		<aside>
 			<ul>
 				<li onclick="document.getElementById('contenido').innerHTML = '<article><header><h3>La estructura básica de una página web es la siguiente:</h3></header> Una estructura HTML se empieza con la etiqueta &lt; html &gt; y acaba con &lt; /html &gt;. Todo lo que esté en medio será la página web. Dentro de las etiquetas &lt; html &gt; &lt; /html &gt; se encuentran 2 partes diferenciadas.La primera &lt; head &gt; &lt; /head &gt; es la cabecera de la página. Dentro de las etiquetas &lt; body &gt; &lt; /body &gt; se encuentran todo el contenido de la página. </article>'">Curso HTML5</li>
@@ -96,6 +119,8 @@
 		-->
 		<footer>
 			<button id="demo" onclick="aumentarFuente()">+</button> <button id="demo" onclick="disminuirFuente()">-</button>
+			</br></br>
+			<a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
 		</footer>
 
 	</body>

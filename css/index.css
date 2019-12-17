@@ -9,12 +9,7 @@ html
 	background: -webkit-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 	background: -moz-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-	
-	/*
-	background-image: url("../imagenes/fondo.jpg");
-    background-size: 100%;
-    background-repeat: repeat;
-    */
+
 }
 
 body
@@ -68,73 +63,78 @@ figure figcaption
 	list-style-type: square;
 }
 
-/*
-------------------------------------------------------------------------------------------------------------
-MENU DE NAVEGACION
-------------------------------------------------------------------------------------------------------------
-*/
 
-/*
-@media screen and (min-width: 300px) 
+@media screen and (min-width: 800px)
 {
-
-	nav 
+	#mySidenav
 	{
-		width:80%;
-		height:100%;
-		margin:0;
+		display: none;
+	}
+
+	#botonMenuLateral
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#Menu{
+		display: none;
+	}
+
+	#mySidenav
+	{
+		display: block;
+	}
+
+	#botonMenuLateral
+	{
+		display: block;
+	}	
+
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		}
+		
+		.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		}
+		
+		.sidenav a:hover {
+		color: #f1f1f1;
+		background-color: #F6B773
+		}
+		
+		.sidenav .closebtn {
 		position: absolute;
-		display:none;
-	}
-	 
-	nav ul li 
-	{
-		display:inline-block;
-		float:none;
-		border:1px solid rgba(100,100,100, .3);
-	}
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+		}
 
-	nav ul li a 
-	{
-		padding:20px;
-		display:block;
-		text-decoration:none;
-	}
-}
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
 
+  }
 
-#Menu 
-{
-	width:80%;
-	margin:0;
-	position: none; 
-	background-color: none;
-	padding: 50;
-
-}
-
-#Menu ul li 
-{
-	display:inline-block;
-	margin:60px;
-}
-
-#Menu ul li a 
-{
-	padding: 10px 50px;
-	display:block;
-	text-decoration:none;
-	color: black;
-    transition: all 0.3s linear;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-#Menu ul li a:hover{
-    background-color: #F6B773
-}
-*/
 
 
 #Menu
@@ -143,7 +143,6 @@ MENU DE NAVEGACION
 	width: 500px;
 	font-size: 18px;
 }
-
 
 #Menu ul
 {
@@ -240,6 +239,22 @@ article details p a
     font-size: 18px;
 }
 
+#VideoPlayer
+{
+	width: 99.9%;
+}
+
+.imgespecial
+{
+	width: 90%;
+}
+
+footer a
+{
+	text-decoration:none;
+	color:black;
+}
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
   80% {-webkit-transform: rotate(180deg);}
@@ -249,3 +264,4 @@ article details p a
 @keyframes mymove {
   80% {transform: rotate(180deg);}
 }
+

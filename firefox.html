@@ -45,6 +45,29 @@
 		
 		</nav>
 
+		<!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="developer.html">DEVELOPER</a>
+			<li><a href="developer.html">-INTRODUCCION</a></li>
+			<li><a href="firefox.html">-FIREFOX</a></li>
+			<li><a href="chrome.html">-CHROME</a></li>
+			<li><a href="cursos.html">CURSOS</a></li>
+			<li><a href="formulario.html">FORMULARIO</a></li>
+		</nav>
+		<span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
+		
+		<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>	
+
 		<aside>
 			<!---->
 			<!---->
@@ -61,7 +84,7 @@
         			</figure>
 					<h2>HERRAMIENTAS DE DESARROLLO EN FIREFOX</h2>
 					<figure>
-						<video id="VideoPlayer" width='1280' height="720" controls='controls'>
+						<video id="VideoPlayer" controls='controls'>
 		               
 		       				<source src="videos/video_firefox.mp4" type="video/mp4"/>
 		                        
@@ -75,6 +98,8 @@
 
 		<footer>
 			<button id="demo" onclick="aumentarFuente()">+</button> <button id="demo" onclick="disminuirFuente()">-</button>
+			</br></br>
+			<a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
 		</footer>
 
 	</body>

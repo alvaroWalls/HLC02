@@ -42,8 +42,30 @@
 				<li><a href="cursos.html">CURSOS</a></li>
 				<li><a href="formulario.html">FORMULARIO</a></li>
 			</ul>
-		
 		</nav>
+
+		<!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
+		<nav id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="developer.html">DEVELOPER</a>
+			<li><a href="developer.html">-INTRODUCCION</a></li>
+			<li><a href="firefox.html">-FIREFOX</a></li>
+			<li><a href="chrome.html">-CHROME</a></li>
+			<li><a href="cursos.html">CURSOS</a></li>
+			<li><a href="formulario.html">FORMULARIO</a></li>
+		</nav>
+		<span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
+		
+		<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>	
 
 		<section>
 
@@ -68,10 +90,18 @@
 						<h2><br/>Un primer vistazo a los elementos de la consola</h2>
 					
 						Una vez que hemos abierto la consola, vemos un menu en el que podemos seleccionar diferentes pestañas. Vamos a hacer un repaso de cada una de ellas.
-						<figure>
-							<img id="imgespecial" src="imagenes/instruccion_chrome_2.png" alt="100"/>
+						
+						<picture id="imgespecial">
+							<source class= "imgespecial" media="(min-width: 800px)" srcset="imagenes/instruccion_chrome_2.png">
+							<source class= "imgespecial" media="(min-width: 500px)" srcset="imagenes/chrome.png">
+								<img class= "imgespecial" src="imagenes/instruccion_chrome_2.png">
+						</picture>
+						
+						<!--<figure>.
+							<img  id="imgespecial" src="imagenes/instruccion_chrome_2.png" alt="100"/>
+
 							<figcaption><small>Panel de opciones de la consola para desarrolladores<br/></small></figcaption>
-						</figure>
+						</figure>-->
 
 						<ul class="lista">
 							<li><u>Elements</u>: En esta opción se muestra el código HTML de la página y las reglas CSS que se han aplicado. Se pueden modificar los elementos y el estilo libremente, aunque se perderán los cambios una vez que recargues la página.</li>
@@ -108,6 +138,8 @@
 
 		<footer>
 			<button id="demo" onclick="aumentarFuente()">+</button> <button id="demo" onclick="disminuirFuente()">-</button>
+			</br></br>
+			<a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
 		</footer>
 
 	</body>
