@@ -51,13 +51,15 @@
 		<!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
 		<nav id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<li><a href="index.html">INICIO</a></li>
-			<li><a href="developer.html">DEVELOPER</a>
-			<li><a href="developer.html">-INTRODUCCION</a></li>
-			<li><a href="firefox.html">-FIREFOX</a></li>
-			<li><a href="chrome.html">-CHROME</a></li>
-			<li><a href="cursos.html">CURSOS</a></li>
-			<li><a href="formulario.html">FORMULARIO</a></li>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="developer.html">DEVELOPER</a>
+				<li><a href="developer.html">-INTRODUCCION</a></li>
+				<li><a href="firefox.html">-FIREFOX</a></li>
+				<li><a href="chrome.html">-CHROME</a></li>
+				<li><a href="cursos.html">CURSOS</a></li>
+				<li><a href="formulario.html">FORMULARIO</a></li>
+			</ul>
 		</nav>
 		<span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
 		
@@ -82,7 +84,7 @@
 		<section id="contenido">
 			<article>
 				En este curso aprenderemos a maquetar sitios Web con HTML5 y a brindar estilos con CSS3. No necesitas conocimientos previos, pues empezaremos desde cero con una serie de ejemplos prácticos y al término del curso, desarrollaremos un proyecto real en el cual aplicaremos todo lo aprendido
-				</br>
+				<br/>
 				<figure>
 					<img onmouseover="agrandarImagen(this)" onmouseout="normalizarImagen(this)" border="0" src="imagenes/icono.png" alt="Smiley" width="192" height="192"/>
 				</figure>
@@ -118,8 +120,8 @@
 		</script>
 		-->
 		<footer>
-			<button id="demo" onclick="aumentarFuente()">+</button> <button id="demo" onclick="disminuirFuente()">-</button>
-			</br></br>
+			<button class="demo" onclick="aumentarFuente()">+</button> <button class="demo" onclick="disminuirFuente()">-</button>
+			<br/><br/>
 			<a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
 		</footer>
 

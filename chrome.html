@@ -47,13 +47,15 @@
 		<!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
 		<nav id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<li><a href="index.html">INICIO</a></li>
-			<li><a href="developer.html">DEVELOPER</a>
-			<li><a href="developer.html">-INTRODUCCION</a></li>
-			<li><a href="firefox.html">-FIREFOX</a></li>
-			<li><a href="chrome.html">-CHROME</a></li>
-			<li><a href="cursos.html">CURSOS</a></li>
-			<li><a href="formulario.html">FORMULARIO</a></li>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="developer.html">DEVELOPER</a>
+				<li><a href="developer.html">-INTRODUCCION</a></li>
+				<li><a href="firefox.html">-FIREFOX</a></li>
+				<li><a href="chrome.html">-CHROME</a></li>
+				<li><a href="cursos.html">CURSOS</a></li>
+				<li><a href="formulario.html">FORMULARIO</a></li>
+			</ul>
 		</nav>
 		<span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
 		
@@ -94,7 +96,7 @@
 						<picture id="imgespecial">
 							<source class= "imgespecial" media="(min-width: 800px)" srcset="imagenes/instruccion_chrome_2.png">
 							<source class= "imgespecial" media="(min-width: 500px)" srcset="imagenes/chrome.png">
-								<img class= "imgespecial" src="imagenes/instruccion_chrome_2.png">
+								<img class= "imgespecial" src="imagenes/instruccion_chrome_2.png" alt="imgespecial">
 						</picture>
 						
 						<!--<figure>.
@@ -137,8 +139,8 @@
 		</section>
 
 		<footer>
-			<button id="demo" onclick="aumentarFuente()">+</button> <button id="demo" onclick="disminuirFuente()">-</button>
-			</br></br>
+			<button class="demo" onclick="aumentarFuente()">+</button> <button class="demo" onclick="disminuirFuente()">-</button>
+			<br/><br/>
 			<a href="https://validator.w3.org/#validate_by_upload">Validado en W3C</a>
 		</footer>
 
