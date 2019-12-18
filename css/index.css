@@ -89,6 +89,11 @@ figure figcaption
 		display: block;
 	}
 
+	#mySidenav li
+	{
+		list-style: none;
+	}
+
 	#botonMenuLateral
 	{
 		display: block;

@@ -47,6 +47,29 @@
 		
 		</nav>
 
+        <!--Menu que solo se mostrara cuando al pantalla sea insuficiente para mostrar bien en el #Menu-->
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="developer.html">DEVELOPER</a>
+            <li><a href="developer.html">-INTRODUCCION</a></li>
+            <li><a href="firefox.html">-FIREFOX</a></li>
+            <li><a href="chrome.html">-CHROME</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li><a href="formulario.html">FORMULARIO</a></li>
+        </nav>
+        <span id="botonMenuLateral" onclick="openNav()">&#9776; Menu</span>
+        
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>   
+
 		<form action = "index.html" method="post" class="form-register" onSubmit="return validar();">
         <fieldset id="bloqueDatosPersonales">
             <legend id="hola">DATOS PERSONALES</legend>
